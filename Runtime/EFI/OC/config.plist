@@ -20,7 +20,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
+				<string>SSDT-AWAC-DISABLE.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -28,13 +28,13 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
 			</dict>
@@ -52,7 +52,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USB-Reset.aml</string>
+				<string>SSDT-RHUB.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -94,7 +94,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>JV9DUlM=</data>
 				<key>Limit</key>
@@ -120,7 +120,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>IgABeQA=</data>
 				<key>Limit</key>
@@ -146,7 +146,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>IgEAeQA=</data>
 				<key>Limit</key>
@@ -359,7 +359,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BQCbPg==</data>
+				<data>BwCbPg==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x7)/Pci(0x0,0x0)</key>
 			<dict>
@@ -469,7 +469,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RTCMemoryFixup</string>
 				<key>MaxKernel</key>
@@ -1254,7 +1254,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 aclid=1</string>
+				<string>-v keepsyms=1 debug=0x100 aclid=1 rtcfx_exclude=00-FF</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1327,9 +1327,9 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02005902CD0000CB</string>
+			<string>C02034701J900008C</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>4105</integer>
 			<key>ROM</key>
 			<data>5oDyD1It</data>
 			<key>SpoofVendor</key>
@@ -1339,9 +1339,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C6JZC046M</string>
+			<string>C02D87Y2046M</string>
 			<key>SystemUUID</key>
-			<string>D25A7795-3752-42DA-B2D7-00AD5E488B05</string>
+			<string>E2F4E179-AAE4-4484-B3F6-264D18EE3939</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
