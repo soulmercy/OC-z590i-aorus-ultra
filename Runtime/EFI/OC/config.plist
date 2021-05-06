@@ -377,15 +377,26 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>AQAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BQCbPg==</data>
+				<data>BwCbPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
+				<key>device_type</key>
+				<string>Display controller</string>
+				<key>enable-metal</key>
+				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Mobile)</string>
+				<key>disable-gpu</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x7)/Pci(0x0,0x0)</key>
 			<dict>
@@ -406,6 +417,17 @@
 				<string>Ethernet controller</string>
 				<key>model</key>
 				<string>Intel(R) Ethernet Controller I225-LM</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>alc-layout-id</key>
+				<data>HAAAAA==</data>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>model</key>
+				<string>Realtek ALC1220-VB</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1150,9 +1172,9 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1165,11 +1187,11 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
-			<true/>
+			<false/>
 			<key>DisableWatchDog</key>
-			<true/>
+			<false/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -1179,7 +1201,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1298,7 +1320,7 @@
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>AQ==</data>
+				<data>Ag==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -1310,7 +1332,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=28 swd_panic=1</string>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1468,7 +1490,7 @@
 		<key>Drivers</key>
 		<array>
 			<string>OpenRuntime.efi</string>
-			<string>#OpenCanopy.efi</string>
+			<string>OpenCanopy.efi</string>
 			<string>#AudioDxe.efi</string>
 			<string>#OpenPartitionDxe.efi</string>
 			<string>#OpenUsbKbDxe.efi</string>
