@@ -413,8 +413,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
-				<key>alc-layout-id</key>
-				<data>HAAAAA==</data>
+				<key>layout-id</key>
+				<data>BwAAAA==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>model</key>
@@ -607,7 +607,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
