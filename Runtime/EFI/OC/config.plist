@@ -50,7 +50,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-RHUB.aml</string>
 			</dict>
@@ -413,10 +413,10 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
-				<key>layout-id</key>
-				<data>BwAAAA==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>layout-id</key>
+				<data>BwAAAA==</data>
 				<key>model</key>
 				<string>Realtek ALC1220-VB</string>
 			</dict>
@@ -481,7 +481,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/DebugEnhancer</string>
 				<key>MaxKernel</key>
@@ -499,7 +499,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
@@ -625,7 +625,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
 				<key>MaxKernel</key>
@@ -1310,7 +1310,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 dk.e1000=0</string>
+				<string>-v debug=0x100 keepsyms=1 </string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
