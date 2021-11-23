@@ -5,38 +5,22 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLwsLfXb.aml, Tue Nov 23 10:39:49 2021
+ * Disassembly of iASL36CCG6.aml, Tue Nov 23 10:41:56 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000179 (377)
+ *     Length           0x00000132 (306)
  *     Revision         0x02
- *     Checksum         0x24
+ *     Checksum         0xF6
  *     OEM ID           "ACDT"
  *     OEM Table ID     "SsdtEC"
  *     OEM Revision     0x00001000 (4096)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20210930 (539035952)
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "SsdtEC", 0x00001000)
 {
     External (_SB_.PC00.LPCB, DeviceObj)
-    External (_SB_.PC00.LPCB.H_EC, DeviceObj)
-
-    Scope (\_SB.PC00.LPCB.H_EC)
-    {
-        Method (_STA, 0, NotSerialized)  // _STA: Status
-        {
-            If (_OSI ("Darwin"))
-            {
-                Return (Zero)
-            }
-            Else
-            {
-                Return (0x0F)
-            }
-        }
-    }
 
     Scope (\_SB)
     {

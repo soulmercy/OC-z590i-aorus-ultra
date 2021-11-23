@@ -5,22 +5,22 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLhOptn7.aml, Tue Nov 23 10:40:07 2021
+ * Disassembly of iASLDElKzS.aml, Tue Nov 23 10:42:08 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
  *     Length           0x000000A1 (161)
  *     Revision         0x02
- *     Checksum         0xF9
+ *     Checksum         0x8A
  *     OEM ID           "ACDT"
  *     OEM Table ID     "CpuPlug"
  *     OEM Revision     0x00003000 (12288)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20210930 (539035952)
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlug", 0x00003000)
 {
-    External (_SB_.PR00, ProcessorObj)
+    External (_SB_.CPU0, ProcessorObj)
 
     Method (PMPM, 4, NotSerialized)
     {
@@ -39,11 +39,11 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "CpuPlug", 0x00003000)
         })
     }
 
-    If (CondRefOf (\_SB.PR00))
+    If (CondRefOf (\_SB.CPU0))
     {
-        If ((ObjectType (\_SB.PR00) == 0x0C))
+        If ((ObjectType (\_SB.CPU0) == 0x0C))
         {
-            Scope (\_SB.PR00)
+            Scope (\_SB.CPU0)
             {
                 If (_OSI ("Darwin"))
                 {
