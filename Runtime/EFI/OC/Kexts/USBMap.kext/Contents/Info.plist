@@ -119,15 +119,17 @@
 						DAAAAA==
 						</data>
 					</dict>
-<!-- 					<key>HS14</key>
+					<key>HS13</key>
 					<dict>
+						<key>Comment</key>
+						<string>rgb</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
 						<data>
-						DgAAAA==
+						DQAAAA==
 						</data>
-					</dict> -->
+					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>Comment</key>
